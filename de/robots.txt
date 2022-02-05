@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /logs/
+
+Sitemap: http://www.julianejeske.com/sitemap.xml
+Host: www.julianejeske.com
+

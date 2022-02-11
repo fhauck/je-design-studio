@@ -243,9 +243,14 @@ body {
     top: 0;
 }
 
-.is-active {
-
+#navMenu.is-active .btn__line.theme_white {
+	color: var(--colorBlack);
 }
+
+#navMenu.is-active .btn__line.theme_white:before {
+	background-color: var(--colorBlack);
+}
+
 
 label {
 	display:flex;
@@ -1077,6 +1082,7 @@ header .innerwrapper {
 	width: 75%;
 }
 
+
 .btn__line.theme_white {
 	color: var(--colorWhite);
 }
@@ -1291,6 +1297,7 @@ header .innerwrapper {
 }
 
 #overlayMenuContainer {
+	--overlayHeight: 100vh;
 	width: 100vw;
 	height: var(--overlayHeight);
   	background-color: var(--colorGrey);

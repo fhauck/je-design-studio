@@ -319,13 +319,14 @@ input[type="checkbox"]:checked ~ .nav:nth-of-type(3){
 	transition: border-radius 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 300ms 100ms ease-out;
 }
 
-.cursor-dot .is-pink {
-	background-color: var(--colorPink);
-}
 
 #index .cursor-dot,
 #services .cursor-dot {
 	background-color: var(--colorWhite);
+}
+
+.cursor-dot.is-pink {
+	background-color: var(--colorPink) !important;
 }
 
 .cursor-dot.hidden {
@@ -910,7 +911,7 @@ header {
 	left: 0;
 	top: 0;
 	z-index: 999999;
-	pointer-events: none;
+	//pointer-events: none;
 }
 
 header .logo-fill {
@@ -990,6 +991,9 @@ header .innerwrapper {
 	right: 0;
 }
 
+#btn-scroll-top {
+	display: none;
+}
 
 #btn-scroll-top svg {
 	position: fixed;
